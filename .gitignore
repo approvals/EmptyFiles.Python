@@ -1,6 +1,6 @@
 *.py[cod]
 
-tests/temp/
+temp/
 # C extensions
 *.so
 
