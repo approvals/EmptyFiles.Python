@@ -1,3 +1,4 @@
 pytest
 approvaltests
 setuptools
+requests
