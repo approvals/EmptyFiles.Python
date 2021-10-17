@@ -21,6 +21,7 @@ def test_create_empty_file_in_nested_directory():
 def test_sample():
     clear_temp()
     # begin-snippet: create_empty_jpg
+    from empty_files.empty_files import create_empty_file
     create_empty_file("temp/empty.jpg")
     # end-snippet:
     verify_file("temp/empty.jpg", options=Options().for_file.with_extension('.jpg'))
