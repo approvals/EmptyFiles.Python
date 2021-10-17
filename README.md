@@ -18,9 +18,10 @@ This code:
 <!-- snippet: create_empty_jpg -->
 <a id='snippet-create_empty_jpg'></a>
 ```py
+from empty_files.empty_files import create_empty_file
 create_empty_file("temp/empty.jpg")
 ```
-<sup><a href='/tests/test_empty_files.py#L23-L25' title='Snippet source file'>snippet source</a> | <a href='#snippet-create_empty_jpg' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/tests/test_empty_files.py#L23-L26' title='Snippet source file'>snippet source</a> | <a href='#snippet-create_empty_jpg' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 will create the following [image](tests/test_empty_files.test_sample.approved.jpg)
