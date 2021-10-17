@@ -18,6 +18,14 @@ def test_create_empty_file_in_nested_directory():
     verify_file_creation("temp/temp/empty.txt")
 
 
+def test_sample():
+    clear_temp()
+    # begin-snippet: create_empty_jpg
+    create_empty_file("temp/empty.jpg")
+    # end-snippet:
+    verify_file("temp/empty.jpg", options=Options().for_file.with_extension('.jpg'))
+
+
 def verify_file_creation(file_name):
     clear_temp()
     create_empty_file(file_name)
