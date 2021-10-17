@@ -3,7 +3,11 @@
 **TL;DR** Null Object pattern for files. 
 
 <!-- toc -->
-<!-- endToc -->
+## Contents
+
+  * [Usage](#usage)
+  * [Null Object Pattern](#null-object-pattern)
+  * [Attributions](#attributions)<!-- endToc -->
 
 This project will create an empty file of a type requested. 
 If possible, that file will be the smallest valid file for that type. For example, an empty jpg will be a 1x1 pixel jpg.
@@ -11,7 +15,13 @@ If possible, that file will be the smallest valid file for that type. For exampl
 ## Usage
 This code:
 
-snippet: create_empty_jpg
+<!-- snippet: create_empty_jpg -->
+<a id='snippet-create_empty_jpg'></a>
+```py
+create_empty_file("temp/empty.jpg")
+```
+<sup><a href='/tests/test_empty_files.py#L23-L25' title='Snippet source file'>snippet source</a> | <a href='#snippet-create_empty_jpg' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 will create the following [image](tests/test_empty_files.test_sample.approved.jpg)
 
