@@ -9,7 +9,7 @@ matched = re.search(r'"(.*)"', _version_file_contents)
 VERSION = matched.group(1) if matched is not None else "UNKNOWN VERSION"
 
 setup(
-    name="empty_files",
+    name="empty-files",
     version=VERSION,
     description="Serves empty files of many types",
     author="empty_files Contributors",
