@@ -7,6 +7,7 @@
 <!-- toc -->
 ## Contents
 
+  * [Setup](#setup)
   * [Usage](#usage)
   * [Null Object Pattern](#null-object-pattern)
   * [Attributions](#attributions)<!-- endToc -->
