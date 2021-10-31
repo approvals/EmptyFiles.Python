@@ -15,6 +15,7 @@ setup(
     author="empty_files Contributors",
     url="https://github.com/approvals/EmptyFiles.Python",
     python_requires=">=3.6.1",
+    install_requires=["requests"],
     packages=find_packages(exclude=["tests*"]),
     long_description=(HERE / "README.md").read_text(),
     long_description_content_type="text/markdown",
