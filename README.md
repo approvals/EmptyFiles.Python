@@ -1,5 +1,7 @@
 # EmptyFiles.Python
 
+[![PyPI version](https://img.shields.io/pypi/v/empty-files.svg)](https://pypi.org/project/empty-files)
+
 **TL;DR** Null Object pattern for files. 
 
 <!-- toc -->
@@ -11,6 +13,13 @@
 
 This project will create an empty file of a type requested. 
 If possible, that file will be the smallest valid file for that type. For example, an empty jpg will be a 1x1 pixel jpg.
+
+## Setup
+
+From [pypi](https://pypi.org/project/empty-files/):
+
+	pip install empty-files
+
 
 ## Usage
 This code:
