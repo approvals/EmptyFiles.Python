@@ -1,6 +1,7 @@
 # EmptyFiles.Python
 
 [![PyPI version](https://img.shields.io/pypi/v/empty-files.svg)](https://pypi.org/project/empty-files)
+[![Test](https://github.com/approvals/EmptyFiles.Python/actions/workflows/test.yml/badge.svg)](https://github.com/approvals/EmptyFiles.Python/actions/workflows/test.yml)
 
 **TL;DR** Null Object pattern for files. 
 
