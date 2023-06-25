@@ -1,6 +1,12 @@
 name: Test
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 15 1 * *'  # <https://crontab.guru/#45_15_1_*_*> - "once a month"
+
 
 jobs:
   build:
@@ -9,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
         os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
