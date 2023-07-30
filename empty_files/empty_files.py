@@ -1,7 +1,5 @@
 from pathlib import Path
 
-import requests as requests
-
 
 def create_empty_file(file_path: str) -> None:
     path = Path(file_path)
@@ -15,6 +13,7 @@ def create_empty_file(file_path: str) -> None:
 
 
 def download_file(url: str, file_path: str) -> str:
+    import requests as requests # this is to catch the exception if your OpenSSL environment is not setup correctly
     with requests.get(url, stream=True) as response:
         response.raise_for_status()
         with open(file_path, 'wb') as file:
