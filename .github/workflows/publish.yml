@@ -24,8 +24,8 @@ jobs:
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: set version
         run: |
-              rm ./version.py
-              echo version_number = \"${{ steps.version.outputs.tag }}\" > ./version.py
+             rm ./version.py
+             echo version_number = \"${{ steps.version.outputs.tag }}\" > ./version.py
       - name: Push changes
         run: |
               git config --local user.email "action@github.com"
@@ -38,7 +38,7 @@ jobs:
               remote="https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
               branch="master"
               git push "${remote}" ${branch} || echo "nothing to push"
-            shell: bash
+        shell: bash
       - name: Build and publish
         env:
           TWINE_USERNAME: __token__
