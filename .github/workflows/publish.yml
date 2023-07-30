@@ -24,8 +24,10 @@ jobs:
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: set version
         run: |
+             cd empty_files
              rm ./version.py
              echo version_number = \"${{ steps.version.outputs.tag }}\" > ./version.py
+             cd ..
       - name: Push changes
         run: |
               git config --local user.email "action@github.com"
